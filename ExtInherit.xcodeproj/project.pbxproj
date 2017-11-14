@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083265B2A6F5200A72E0F1D8 /* Pods_ExtInherit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF39BC4E4CBF0E804B84B1E /* Pods_ExtInherit.framework */; };
+		CB0873417068503AF9C9BA66 /* Pods_ExtInheritShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D345007E34F79C6745969BA /* Pods_ExtInheritShare.framework */; };
+		FD417E101FBACFA9009F6FF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD417E0F1FBACFA9009F6FF6 /* AppDelegate.m */; };
+		FD417E131FBACFA9009F6FF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD417E121FBACFA9009F6FF6 /* ViewController.m */; };
+		FD417E161FBACFA9009F6FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD417E141FBACFA9009F6FF6 /* Main.storyboard */; };
+		FD417E181FBACFA9009F6FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD417E171FBACFA9009F6FF6 /* Assets.xcassets */; };
+		FD417E1B1FBACFA9009F6FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD417E191FBACFA9009F6FF6 /* LaunchScreen.storyboard */; };
+		FD417E1E1FBACFA9009F6FF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD417E1D1FBACFA9009F6FF6 /* main.m */; };
+		FD417E2C1FBAD279009F6FF6 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD417E2B1FBAD279009F6FF6 /* ShareViewController.m */; };
+		FD417E2F1FBAD279009F6FF6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD417E2D1FBAD279009F6FF6 /* MainInterface.storyboard */; };
+		FD417E331FBAD279009F6FF6 /* ExtInheritShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD417E281FBAD278009F6FF6 /* ExtInheritShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD417E311FBAD279009F6FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD417E031FBACFA9009F6FF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD417E271FBAD278009F6FF6;
+			remoteInfo = ExtInheritShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD417E371FBAD279009F6FF6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD417E331FBAD279009F6FF6 /* ExtInheritShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19E088A3B318D2942F060F16 /* Pods-ExtInheritShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtInheritShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtInheritShare/Pods-ExtInheritShare.debug.xcconfig"; sourceTree = "<group>"; };
+		30C2055EB792D17BB8F6101A /* Pods-ExtInheritShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtInheritShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtInheritShare/Pods-ExtInheritShare.release.xcconfig"; sourceTree = "<group>"; };
+		4FF39BC4E4CBF0E804B84B1E /* Pods_ExtInherit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtInherit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B44944C31F63F0944F0A7E6 /* Pods-ExtInherit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtInherit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExtInherit/Pods-ExtInherit.release.xcconfig"; sourceTree = "<group>"; };
+		951F98601D7E8CF2556034F5 /* Pods-ExtInherit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtInherit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExtInherit/Pods-ExtInherit.debug.xcconfig"; sourceTree = "<group>"; };
+		9D345007E34F79C6745969BA /* Pods_ExtInheritShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtInheritShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD417E0B1FBACFA9009F6FF6 /* ExtInherit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtInherit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD417E0E1FBACFA9009F6FF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD417E0F1FBACFA9009F6FF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD417E111FBACFA9009F6FF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD417E121FBACFA9009F6FF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD417E151FBACFA9009F6FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD417E171FBACFA9009F6FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD417E1A1FBACFA9009F6FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD417E1C1FBACFA9009F6FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD417E1D1FBACFA9009F6FF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD417E281FBAD278009F6FF6 /* ExtInheritShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtInheritShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD417E2A1FBAD279009F6FF6 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		FD417E2B1FBAD279009F6FF6 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		FD417E2E1FBAD279009F6FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FD417E301FBAD279009F6FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD417E081FBACFA9009F6FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083265B2A6F5200A72E0F1D8 /* Pods_ExtInherit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD417E251FBAD278009F6FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0873417068503AF9C9BA66 /* Pods_ExtInheritShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A293A8CC926A3848D56A231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF39BC4E4CBF0E804B84B1E /* Pods_ExtInherit.framework */,
+				9D345007E34F79C6745969BA /* Pods_ExtInheritShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3DFE06C7E0B692D7C4FD609 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				951F98601D7E8CF2556034F5 /* Pods-ExtInherit.debug.xcconfig */,
+				7B44944C31F63F0944F0A7E6 /* Pods-ExtInherit.release.xcconfig */,
+				19E088A3B318D2942F060F16 /* Pods-ExtInheritShare.debug.xcconfig */,
+				30C2055EB792D17BB8F6101A /* Pods-ExtInheritShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD417E021FBACFA9009F6FF6 = {
+			isa = PBXGroup;
+			children = (
+				FD417E0D1FBACFA9009F6FF6 /* ExtInherit */,
+				FD417E291FBAD279009F6FF6 /* ExtInheritShare */,
+				FD417E0C1FBACFA9009F6FF6 /* Products */,
+				B3DFE06C7E0B692D7C4FD609 /* Pods */,
+				1A293A8CC926A3848D56A231 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD417E0C1FBACFA9009F6FF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD417E0B1FBACFA9009F6FF6 /* ExtInherit.app */,
+				FD417E281FBAD278009F6FF6 /* ExtInheritShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD417E0D1FBACFA9009F6FF6 /* ExtInherit */ = {
+			isa = PBXGroup;
+			children = (
+				FD417E0E1FBACFA9009F6FF6 /* AppDelegate.h */,
+				FD417E0F1FBACFA9009F6FF6 /* AppDelegate.m */,
+				FD417E111FBACFA9009F6FF6 /* ViewController.h */,
+				FD417E121FBACFA9009F6FF6 /* ViewController.m */,
+				FD417E141FBACFA9009F6FF6 /* Main.storyboard */,
+				FD417E171FBACFA9009F6FF6 /* Assets.xcassets */,
+				FD417E191FBACFA9009F6FF6 /* LaunchScreen.storyboard */,
+				FD417E1C1FBACFA9009F6FF6 /* Info.plist */,
+				FD417E1D1FBACFA9009F6FF6 /* main.m */,
+			);
+			path = ExtInherit;
+			sourceTree = "<group>";
+		};
+		FD417E291FBAD279009F6FF6 /* ExtInheritShare */ = {
+			isa = PBXGroup;
+			children = (
+				FD417E2A1FBAD279009F6FF6 /* ShareViewController.h */,
+				FD417E2B1FBAD279009F6FF6 /* ShareViewController.m */,
+				FD417E2D1FBAD279009F6FF6 /* MainInterface.storyboard */,
+				FD417E301FBAD279009F6FF6 /* Info.plist */,
+			);
+			path = ExtInheritShare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD417E0A1FBACFA9009F6FF6 /* ExtInherit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD417E211FBACFA9009F6FF6 /* Build configuration list for PBXNativeTarget "ExtInherit" */;
+			buildPhases = (
+				654984E3BD2D56225B120BB8 /* [CP] Check Pods Manifest.lock */,
+				FD417E071FBACFA9009F6FF6 /* Sources */,
+				FD417E081FBACFA9009F6FF6 /* Frameworks */,
+				FD417E091FBACFA9009F6FF6 /* Resources */,
+				FD417E371FBAD279009F6FF6 /* Embed App Extensions */,
+				39BCDCA20F855DA2F88C1D2A /* [CP] Embed Pods Frameworks */,
+				95E757EFAC3F7215A76DAA1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD417E321FBAD279009F6FF6 /* PBXTargetDependency */,
+			);
+			name = ExtInherit;
+			productName = ExtInherit;
+			productReference = FD417E0B1FBACFA9009F6FF6 /* ExtInherit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD417E271FBAD278009F6FF6 /* ExtInheritShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD417E361FBAD279009F6FF6 /* Build configuration list for PBXNativeTarget "ExtInheritShare" */;
+			buildPhases = (
+				DD02D969F5A31C9CEE071179 /* [CP] Check Pods Manifest.lock */,
+				FD417E241FBAD278009F6FF6 /* Sources */,
+				FD417E251FBAD278009F6FF6 /* Frameworks */,
+				FD417E261FBAD278009F6FF6 /* Resources */,
+				816A8F0AF811F874D0350F59 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtInheritShare;
+			productName = ExtInheritShare;
+			productReference = FD417E281FBAD278009F6FF6 /* ExtInheritShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD417E031FBACFA9009F6FF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ReeS;
+				TargetAttributes = {
+					FD417E0A1FBACFA9009F6FF6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					FD417E271FBAD278009F6FF6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD417E061FBACFA9009F6FF6 /* Build configuration list for PBXProject "ExtInherit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD417E021FBACFA9009F6FF6;
+			productRefGroup = FD417E0C1FBACFA9009F6FF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD417E0A1FBACFA9009F6FF6 /* ExtInherit */,
+				FD417E271FBAD278009F6FF6 /* ExtInheritShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD417E091FBACFA9009F6FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD417E1B1FBACFA9009F6FF6 /* LaunchScreen.storyboard in Resources */,
+				FD417E181FBACFA9009F6FF6 /* Assets.xcassets in Resources */,
+				FD417E161FBACFA9009F6FF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD417E261FBAD278009F6FF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD417E2F1FBAD279009F6FF6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39BCDCA20F855DA2F88C1D2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExtInherit/Pods-ExtInherit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Pod-Demo/Pod_Demo.framework",
+				"${BUILT_PRODUCTS_DIR}/Pod-Demo-AppExtension/Pod_Demo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pod_Demo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pod_Demo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExtInherit/Pods-ExtInherit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654984E3BD2D56225B120BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExtInherit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816A8F0AF811F874D0350F59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExtInheritShare/Pods-ExtInheritShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E757EFAC3F7215A76DAA1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExtInherit/Pods-ExtInherit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD02D969F5A31C9CEE071179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExtInheritShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD417E071FBACFA9009F6FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD417E131FBACFA9009F6FF6 /* ViewController.m in Sources */,
+				FD417E1E1FBACFA9009F6FF6 /* main.m in Sources */,
+				FD417E101FBACFA9009F6FF6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD417E241FBAD278009F6FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD417E2C1FBAD279009F6FF6 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD417E321FBAD279009F6FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD417E271FBAD278009F6FF6 /* ExtInheritShare */;
+			targetProxy = FD417E311FBAD279009F6FF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD417E141FBACFA9009F6FF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD417E151FBACFA9009F6FF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD417E191FBACFA9009F6FF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD417E1A1FBACFA9009F6FF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD417E2D1FBAD279009F6FF6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD417E2E1FBAD279009F6FF6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD417E1F1FBACFA9009F6FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD417E201FBACFA9009F6FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD417E221FBACFA9009F6FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951F98601D7E8CF2556034F5 /* Pods-ExtInherit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VD5B8U;
+				INFOPLIST_FILE = ExtInherit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rees.ExtInherit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD417E231FBACFA9009F6FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B44944C31F63F0944F0A7E6 /* Pods-ExtInherit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VD5B8U;
+				INFOPLIST_FILE = ExtInherit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rees.ExtInherit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD417E341FBAD279009F6FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E088A3B318D2942F060F16 /* Pods-ExtInheritShare.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VD5B8U;
+				INFOPLIST_FILE = ExtInheritShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rees.ExtInherit.ExtInheritShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD417E351FBAD279009F6FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C2055EB792D17BB8F6101A /* Pods-ExtInheritShare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VD5B8U;
+				INFOPLIST_FILE = ExtInheritShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rees.ExtInherit.ExtInheritShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD417E061FBACFA9009F6FF6 /* Build configuration list for PBXProject "ExtInherit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD417E1F1FBACFA9009F6FF6 /* Debug */,
+				FD417E201FBACFA9009F6FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD417E211FBACFA9009F6FF6 /* Build configuration list for PBXNativeTarget "ExtInherit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD417E221FBACFA9009F6FF6 /* Debug */,
+				FD417E231FBACFA9009F6FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD417E361FBAD279009F6FF6 /* Build configuration list for PBXNativeTarget "ExtInheritShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD417E341FBAD279009F6FF6 /* Debug */,
+				FD417E351FBAD279009F6FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD417E031FBACFA9009F6FF6 /* Project object */;
+}
